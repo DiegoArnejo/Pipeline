@@ -88,27 +88,3 @@ for palabra, freq in frecuencia.most_common():
 
 #Grafico
 frecuencia.plot(20,show=True)
-
-'''
-Tras el procesamiento del texto, y realizando un analisis de los resultados arrojados por el programa podemos observar que las seis 
-palabras con mayor frecuencia son:    
--Python -> 7 Veces
--JavaScript -> 7 Veces 
--CPlus -> 5 Veces 
--Rust -> 5 Veces 
--interpreted -> 3 Veces
--language -> 3 Veces
-Por otro lado, si queremos deducir cual es la palabra menos utilizada en el corpus, podemos basarnos en su frecuencia de aparicion. Considerando
-las veinte palabras mas utilizadas, podriamos decir que 'compiled' es la palabra con menos apariciones. Cabe destacar que esta 
-conclusion se basa en el grafico generado por el programa, y que palabras como 'high-level' y 'low-level' fueron excluidas por ser tratadas 
-por el tokenizador como unidades lexicas unicas. Es importante tambien resaltar que, tras el proceso de lematizacion y la eliminacion de 
-stopwords muchas palabras tienen solo una aparicion en todo el corpus, por lo que la respuesta esta parcialmente sesgada al resultado  
-obtenido en el grafico mencionado.
-Si intentaramos identificar cuales son aquellas palabras que mas se repiten dentro de una oracion, podriamos decir que 'language' y 
-'compilation' son las que mas veces se repiten, ya que ambas aparecen un total de dos veces en una oracion especifica, mientras que todas 
-las demas aparecen solo una vez.
-
-He de aclarar que comprendo que algunas palabras adquieren un significado diferente cuando se las trata por separado, como es el caso de 
-'Inteligencia Artificial'. Si bien intente que el programa comprendiera esta diferencia utilizando la funcion 'ngrams' de nltk, el resultado 
-no fue el esperado, por lo que decidi no implementarlo.
- '''
